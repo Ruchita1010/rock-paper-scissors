@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Rock Paper Scissors</title>
 </head>
+
 <body>
-    <h1>Rock Paper Scissors</h1>
+    <div id="main-container">
+        <div id="start-div">
+            <p>FIRST TO SCORE 5 POINTS WINS !!!</p>
+            <button id="start-btn">START</button>
+        </div>
+        <div class="container" id="left-container">
+            <div class="score-container">
+                <h2>Player</h2>
+                <p class="score" id="player-score">0</p>
+            </div>
+            <div id="player">
+                <img src="./images/rock.png" alt="" class="hand" id="player-hand">
+            </div>
+            <div id="options">
+                <img src="https://img.icons8.com/emoji/84/4a90e2/rock-emoji.png" class="option" id="rock" />
+                <img src="https://img.icons8.com/fluency/84/000000/matt-paper.png" class="option" id="paper" />
+                <img src="https://img.icons8.com/color/84/000000/scissors.png" class="option" id="scissors" />
+            </div>
+        </div>
+        <div class="container" id="right-container">
+            <div class="score-container">
+                <h2>Computer</h2>
+                <p class="score" id="computer-score">0</p>
+            </div>
+            <div id="computer">
+                <img src="./images/rock.png" alt="" id="computer-hand" class="hand">
+            </div>
+        </div>
+    </div>
+    <div id="popup">
+        <p id="popup-text"></p>
+    </div>
+
+    <!-- for sound effect -->
+    <audio id="ending-sound" src="./sounds/ending-sound.mp3"></audio>
+    <audio id="sound-for-tie" src="./sounds/tie.mp3"></audio>
+
 </body>
 <script src="./script.js"></script>
+
 </html>
